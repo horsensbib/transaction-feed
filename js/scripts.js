@@ -48,6 +48,7 @@ $(document).ready(function(){
 
                //instead of appending each result, add each to the buffer array
                output.push('<li>');
+               output.push('<img src="./getImage.php?faust=' + json.item[i].faustno + '" />');
                output.push('<strong><a href="'+ opac + json.item[i].faustno + opacExt +'">' + json.item[i].title + '</a></strong>');
                if (json.item[i].author.length >= 0) {
                 output.push('<br />' + json.item[i].author );
