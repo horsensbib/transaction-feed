@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /* getImage.php
  *  usage example:
@@ -132,5 +131,4 @@ else {
 	readfile($path . $img_default);
 	//echo "Error, no faust specified.";
 }
->>>>>>> 8cae39fbdbbdce82c63f87af8dda6a9815df8a4a
 ?>
