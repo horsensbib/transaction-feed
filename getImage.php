@@ -16,8 +16,8 @@ if(isset($_GET['faust'])){
 			//Authenticiation for the web service
 			"authentication" => array(
 					"authenticationUser" => "netpunkt",
-					"authenticationGroup" => "761500",
-					"authenticationPassword" => "svitrudri"
+					"authenticationGroup" => "biblioteksnummer",
+					"authenticationPassword" => "kodeord"
 			),
 			//The identifier for a specific image
 			//Identifiers: 
