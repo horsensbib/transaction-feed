@@ -14,6 +14,7 @@ $(document).ready(function(){
 
                //instead of appending each result, add each to the buffer array
                output.push('<li>');
+               output.push('<img src="getImage.php?faust=' + json.item[i].faustno + '" />');
                output.push('<strong><a href="'+ opac + json.item[i].faustno + opacExt +'">' + json.item[i].title + '</a></strong>');
                if (json.item[i].author.length >= 0) {
                 output.push('<br />' + json.item[i].author );
@@ -28,7 +29,7 @@ $(document).ready(function(){
     }
 
     //set an interval to run the getAfl function (30,000 ms is 5 minutes), you can cancel the interval by calling clearInterval(timer);
-    var timer = setInterval(getAfl, 3000);
+    var timer = setInterval(getAfl, 15000);
 
     //run the getAfl function on document.ready
     getAfl();
@@ -48,7 +49,7 @@ $(document).ready(function(){
 
                //instead of appending each result, add each to the buffer array
                output.push('<li>');
-               output.push('<img src="./getImage.php?faust=' + json.item[i].faustno + '" />');
+               output.push('<img src="getImage.php?faust=' + json.item[i].faustno + '" />');
                output.push('<strong><a href="'+ opac + json.item[i].faustno + opacExt +'">' + json.item[i].title + '</a></strong>');
                if (json.item[i].author.length >= 0) {
                 output.push('<br />' + json.item[i].author );
@@ -63,7 +64,7 @@ $(document).ready(function(){
     }
 
     //set an interval to run the getUdl function (30,000 ms is 5 minutes), you can cancel the interval by calling clearInterval(timer);
-    var timer = setInterval(getUdl, 3000);
+    var timer = setInterval(getUdl, 15000);
 
     //run the getUdl function on document.ready
     getUdl();
